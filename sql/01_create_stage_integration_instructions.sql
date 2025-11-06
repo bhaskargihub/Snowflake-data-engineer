@@ -1,0 +1,12 @@
+-- STORAGE INTEGRATION must be created with cloud-side role/permissions configured.
+-- This SQL is a placeholder. To create storage integration, do the following steps:
+-- 1) In Snowflake, create a storage integration object:
+--     CREATE STORAGE INTEGRATION my_s3_integration
+--     TYPE = EXTERNAL_STAGE
+--     STORAGE_PROVIDER = 'S3'
+--     ENABLED = TRUE
+--     STORAGE_AWS_ROLE_ARN = '<aws-role-arn>'
+--     STORAGE_ALLOWED_LOCATIONS = ('s3://my-snowflake-bucket/');
+-- 2) In AWS, create an IAM Role with trust relationship for Snowflake and give it access to the S3 bucket.
+-- 3) Retrieve the storage integration's external ID and complete the AWS role trust.
+-- NOTE: The exact steps are in Snowflake docs: https://docs.snowflake.com/en/user-guide/data-load-s3-create-storage-integration

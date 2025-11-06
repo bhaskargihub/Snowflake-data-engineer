@@ -1,0 +1,12 @@
+my_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <account>
+      user: <user>
+      password: <password>
+      role: <role>
+      warehouse: COMPUTE_WH
+      database: MY_DB
+      schema: TRANSFORMED
